@@ -4,83 +4,64 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c44053762671f5e67f14e0d2c9f01b33",
+    "content-hash": "174b814fe16af0b54c3f367426192652",
     "packages": [
         {
-            "name": "paypal/rest-api-sdk-php",
-            "version": "1.14.0",
+            "name": "components/font-awesome",
+            "version": "5.12.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/paypal/PayPal-PHP-SDK.git",
-                "reference": "72e2f2466975bf128a31e02b15110180f059fc04"
+                "url": "https://github.com/components/font-awesome.git",
+                "reference": "f033e952d0e20684443c0466045deae61fd4e733"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paypal/PayPal-PHP-SDK/zipball/72e2f2466975bf128a31e02b15110180f059fc04",
-                "reference": "72e2f2466975bf128a31e02b15110180f059fc04",
+                "url": "https://api.github.com/repos/components/font-awesome/zipball/f033e952d0e20684443c0466045deae61fd4e733",
+                "reference": "f033e952d0e20684443c0466045deae61fd4e733",
                 "shasum": ""
             },
-            "require": {
-                "ext-curl": "*",
-                "ext-json": "*",
-                "php": ">=5.3.0",
-                "psr/log": "^1.0.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.8.35"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "PayPal": "lib/"
+            "type": "component",
+            "extra": {
+                "component": {
+                    "styles": [
+                        "css/all.css"
+                    ],
+                    "files": [
+                        "css/all.min.css",
+                        "webfonts/*"
+                    ]
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "Apache-2.0"
+                "CC-BY-4.0",
+                "MIT",
+                "OFL-1.1"
             ],
-            "authors": [
-                {
-                    "name": "PayPal",
-                    "homepage": "https://github.com/paypal/rest-api-sdk-php/contributors"
-                }
-            ],
-            "description": "PayPal's PHP SDK for REST APIs",
-            "homepage": "http://paypal.github.io/PayPal-PHP-SDK/",
-            "keywords": [
-                "payments",
-                "paypal",
-                "rest",
-                "sdk"
-            ],
-            "time": "2019-01-04T20:04:25+00:00"
+            "description": "Font Awesome, the iconic SVG, font, and CSS framework.",
+            "time": "2020-02-05T15:33:46+00:00"
         },
         {
-            "name": "psr/log",
-            "version": "1.1.3",
+            "name": "twbs/bootstrap",
+            "version": "v4.4.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/php-fig/log.git",
-                "reference": "0f73288fd15629204f9d42b7055f72dacbe811fc"
+                "url": "https://github.com/twbs/bootstrap.git",
+                "reference": "dca1ab7d877bc4b664b43604657a2b5fbe2b4ecb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/0f73288fd15629204f9d42b7055f72dacbe811fc",
-                "reference": "0f73288fd15629204f9d42b7055f72dacbe811fc",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/dca1ab7d877bc4b664b43604657a2b5fbe2b4ecb",
+                "reference": "dca1ab7d877bc4b664b43604657a2b5fbe2b4ecb",
                 "shasum": ""
             },
-            "require": {
-                "php": ">=5.3.0"
+            "replace": {
+                "twitter/bootstrap": "self.version"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Psr\\Log\\": "Psr/Log/"
+                    "dev-master": "3.3.x-dev"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -89,18 +70,27 @@
             ],
             "authors": [
                 {
-                    "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
+                    "name": "Mark Otto",
+                    "email": "markdotto@gmail.com"
+                },
+                {
+                    "name": "Jacob Thornton",
+                    "email": "jacobthornton@gmail.com"
                 }
             ],
-            "description": "Common interface for logging libraries",
-            "homepage": "https://github.com/php-fig/log",
+            "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+            "homepage": "https://getbootstrap.com/",
             "keywords": [
-                "log",
-                "psr",
-                "psr-3"
+                "JS",
+                "css",
+                "framework",
+                "front-end",
+                "mobile-first",
+                "responsive",
+                "sass",
+                "web"
             ],
-            "time": "2020-03-23T09:12:05+00:00"
+            "time": "2019-11-28T12:59:49+00:00"
         }
     ],
     "packages-dev": [],
@@ -110,5 +100,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
