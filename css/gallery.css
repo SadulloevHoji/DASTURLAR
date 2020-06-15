@@ -1,0 +1,10 @@
+body{
+    background-color: black;
+}
+#gallery{
+    width: 1300px;
+    height: 650px;
+    margin: 20px auto;
+    background-color: #382b07;
+    border: 1px sol
+}
