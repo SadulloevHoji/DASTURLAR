@@ -1,28 +1,25 @@
 <?php
 class Construction{
+    //Class Properties or Attributes
+    //Class methods or functions
 
-    public $parms;
+    //public, protected, private, final - Visibility Scope or Class scope
 
-    public function __construct($name = null)
-    {
-        //You set your variables here
-        $this->parms = $_REQUEST;
-        echo "Dear $name, This is a __construct of the class ({$this->parms['city']}) is loaded <hr>";
+    public function IaMPublicFunction(){
+        echo "IaMPublicFunction: This is a public function <hr>";
     }
 
-    public function __destruct()
-    {
-        //You unset your variables like DB connections or API connections here
-        echo "This is a __destruct of the class ({$this->parms['city']}) is unloaded <hr>";
-        unset($this->parms);
+    protected function IaMProtectedFunction(){
+        echo "IaMProtectedFunction: This is a protected function <hr>";
     }
 
-    public function plumbing(){
-        echo "Sunnat is the head of the Plumbing Department for ({$this->parms['city']})<hr>";
+    private function IaMPrivateFunction(){
+        echo "IaMPrivateFunction: This is a private function <hr>";
     }
 
 }
 
 $construction = new Construction('Zarina');
-$construction->plumbing();
+$construction->IaMPublicFunction();
+
 
