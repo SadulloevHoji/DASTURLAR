@@ -1,22 +1,42 @@
+let number = '';
+let number1 = '';
+let number2 = '';
+let sign = '';
+let mynumber = '';
+
 $(function () {
-    let number = null;
-    let number1 = null;
-    let number2 = null;
-    let sign = null;
+
     $(".num").click(function () {
         number = $(this).text();
-        number += number;
-        if (sign===''){
-            number1 = number;
-            number = '';
+        if (sign!==''){
+            number1+=number;
+        }else{
+            number2+=number;
         }
-        display_result(number1 +sign+ number2);
+
+        display_result(number1+sign+number2);
+
     });
+
+
     $(".sign").click(function () {
         sign = $(this).text();
-        display_result(sign);
+        if (sign==='='){
+            calcualte();
+        }
     });
+
 });
+
+
+function calcualte(){
+   let result = eval()
+}
+
+
+
+
+
 function display_result(num){
     $(".result").html(num);
 }
